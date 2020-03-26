@@ -1,0 +1,69 @@
+
+
+div#area {
+    font: normal 25pt arial;
+    background : rgb(42,139,42);
+    color: darkblue;
+    height: 300px;
+    width: 500px;
+    float: none;
+    line-height: 300px;
+    text-align: center;
+    box-shadow: black 10px 10px 10px;
+    background: url("img_index.jpeg.jpg") center;
+}
+
+form#bloco{
+
+}
+input#ir_cadastro{
+    box-shadow: black 10px 10px 10px;
+    border-bottom: black 3px;
+}
+body {
+background-image: url('img_index1.jpg');
+}
+
+ h1#texto_index {
+color: rgb(25, 7, 73);
+text-align: center;
+text-shadow:  black 5px 5px 5px;
+ }
+ nav#menu {
+	display:block;
+}
+nav#menu ul {
+	list-style:none;
+	text-transform: uppercase;
+    position: fixed;
+    top:-20px;
+    left:450px;
+}
+nav#menu li {
+	display: inline-block;
+	
+	padding: 10px;
+	margin: 2px;
+    transition:background-color 1s;
+
+}
+
+input{
+    box-shadow: 5px 5px 5px black;
+}
+button{
+
+    box-shadow: 5px 5px 5px black;
+}
+
+form#cadastro{
+
+    margin-left: 100px;
+    margin-top: -20px;
+
+}
+legend{
+    text-align: center;
+    font-size: 25px;
+    
+}

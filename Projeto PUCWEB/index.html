@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSINK</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+ 
+</head>
+
+<body>
+   
+    <h1 id= 'texto_index'>Cálcule a quantidade de tinta para seu projeto</h1>
+
+    <div id="area" onclick ='clicar()' onmouseenter='entrar()'onmouseout = "sair()">
+        Interaja...
+    </div><br><br>    
+      
+    <form id='login' action="cadastro.html" method="get">
+        Usuário:<br>
+        <input type='text' name='nome' required autofocus maxlength='5'></br></br>
+        Senha:<br>
+        <input type='password' name='senha' title='senha'>
+        <button type="submit" value="Ir para a calculadora" name="Submit" id="ir_cadastro" >Entrar</button><br>
+    </form><br>
+    
+    <form id='bloco' action="cadastro.html" method="get">
+        <button type="submit"  id="ir_cadastro">Me Cadastrar</button>        
+    </form> 
+    
+    <script>
+        function entrar(){            
+            b = window.document.getElementById("area")
+            b.innerText = 'Clique e descubra !'
+            //b.style.background = "yelow"
+            //como se trata da mesma div poderia colocar só a.innertext = "Entrou!"
+        }
+        function clicar(){
+            a = window.document.querySelector('div#area')
+            //ou podereia fazer window.document.getElementById('area')
+            a.innerText="Quanto comprar!"
+            //a.style.background = "orange"
+        }
+        
+        function sair(){
+            a=window.document.getElementById("area")
+            a.innerText="Se cadastre para calcular!"
+            //a.style.background = "red"
+
+        }
+    </script>
+</body>
+</html>
+
+ssh-keygen -t rsa -b 4096 -C "smilakneto@gmail.com"

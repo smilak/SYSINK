@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <title>Formulário</title>
+</head>
+<body>
+
+ <legend>Cadastro Pessoal</legend></br>
+    <form id="cadastro" method="get" action="envio_dados.php">
+        <label>Nome:</label><br>
+        <input type='text' name='nome' required autofocus maxlength='5' required></br></br>
+        <label>Senha:</label><br>
+        <input id='senha' type='password' name='senha' title='senha' minlength="6" maxlength="8" size="8"required></br></br>
+        <label>Confirmar Senha:</label><br>
+        <input id='confirma_senha' type='password' name='senha' title='senha' minlength="6" maxlength="8" size="8" required></br></br>
+        Email:<br>
+        <input type='email' name='email' require autocomplete='on' placeholder='Digite seu email' required><br><br>
+        Logradouro:<br>
+        <input type='text' name='logradouro' ></br></br>
+        Número:<br>
+        <input type='text' name='numero' ></br></br>
+        CEP:<br>
+        <input type='text' name='cep'> 
+        <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/buscaCepEndereco.cfm" target="blank">CEP Correios</a><br><br>
+        Bairro:<br>
+        <input type='text' name='bairro' ></br></br>
+        Cidade:<br>
+        <input type='text' name='cidade' ></br></br>
+        Estado:<br>
+        <input type='text' name='numero' ></br></br>
+        <button type="submit" onclick='validar()' name='boton'>Enviar</button>
+    </form>
+    <script>
+        var senha = document.getElementById('senha')
+        var confirma_senha= document.getElementById('confirma_senha')       
+       
+        function validar(){
+            if (senha.value != confirma_senha.value){
+                alert('Senhas Diferentes!)             
+            } 
+            else{
+                alert('Cadastro Realizado com Sucesso!')
+            }
+        }
+    </script>
+</body>
+</html>
+
+
